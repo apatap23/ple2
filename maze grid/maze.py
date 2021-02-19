@@ -2,8 +2,26 @@ from grid import Grid
 from linkedStack import LinkedStack
 
 def getOut (maze, showProcess = False):
-    pass
+    c = choices.pop()
+    if maze[c[0][c[1]]] == "G":
+        return True
+    else:
+        maze[c[0]][c[1]] = "."
 
+        if showProcess:
+            print(maze)
+            input()
+
+        for row, col in [[c[0]+1, c[1],
+                        (c[0]-1, c[1]), 
+                        (c[0], c[1]+1),
+                        (c[0], c[1]-1)]]:
+            if row >= 0 and row < maze.getHeight() and \
+                col >= 0 and col < maze.getWidth() and \ 
+                maze[row][col] not in ".":
+
+                choices.push((row,col))
+ 
 def getMazeFromFile():
     fileObj = open("maze1.txt", "r")
     firstLine = list(map(int, fileObj).readline().strip().split()))
