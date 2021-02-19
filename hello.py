@@ -1,7 +1,11 @@
 healthy = ["kale chips", "broccoli"]
-backpack = ["pizza", "frozen custard", "apple crisp", "kale chips"]
+backpack = ["pizza", "broccoli","frozen_custard", "apple_crisp", "kale chips"]
 
+print(backpack)
 
 for i in backpack: 
-    if backpack[i] not in healthy:
-        backpack[i].remove
+    if i not in healthy:
+        backpack.remove(i)
+
+print(healthy)
+print(backpack)
