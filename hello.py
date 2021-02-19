@@ -1,3 +1,7 @@
-healthy = ["Pizza", "Frozen Custard"]
+healthy = ["kale chips", "broccoli"]
+backpack = ["pizza", "frozen custard", "apple crisp", "kale chips"]
 
-healthy.append("Apple Crisps")
+
+for i in backpack: 
+    if backpack[i] not in healthy:
+        backpack[i].remove
