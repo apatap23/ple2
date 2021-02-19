@@ -1,1 +1,3 @@
-healthy = ["pizza", "Frozen Custard"]
+healthy = ["Pizza", "Frozen Custard"]
+
+healthy.append("Apple Crisps")
