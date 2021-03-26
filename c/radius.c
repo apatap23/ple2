@@ -10,4 +10,5 @@ int main()
         printf("The magic number is: %i\n",y);
         return 0;
 
+
 }
