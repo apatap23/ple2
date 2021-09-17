@@ -7,10 +7,15 @@ Part 1: Roll your Own
 
 
 def list_maker():
-    #a = random.sample(range(0, 1000000), 1000000)
-    c , d = [random.sample(range(0, 1000000), 1000000), random.sample(range(0, 1000000), 1000000)]
+    a , b = [random.sample(range(0, 1000000), 1000000), random.sample(range(0, 1000000), 1000000)]
 
-    print (c)
-    print (d) 
+    print (a)
+    print (b) 
 
-list_maker()
+
+def list_maker2():
+    a , b = [random.random() for _ in range(5)], [random.random() for _ in range(5)]
+    print(a)
+    print(b)
+
+list_maker2()
